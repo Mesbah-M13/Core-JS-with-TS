@@ -72,3 +72,14 @@ prices.forEach((price) => {
 });
 
 console.log(`Total: $${total}`); // Total: $100
+
+/* ⚡⚡⚡ 
+
+Key Points:
+
+•  No return value - Returns undefined, can't be chained
+•  Can't break/continue - Must complete full iteration (use for...of if you need to break)
+•  Side effects - Used for operations with side effects (logging, updating external state)
+•  vs map() - Use map() when you need to transform data; use forEach() for side effects
+
+*/
