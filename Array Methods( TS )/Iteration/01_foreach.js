@@ -8,10 +8,11 @@ array.forEach((element, index, array) => {
 });
 
 */
-// Basic Example
-var numbers = [1, 2, 3, 4, 5];
-var result = numbers.forEach(function (num) {
-    console.log(num * 2);
+var users = [
+    { id: 1, name: "Alice", age: 25 },
+    { id: 2, name: "Bob", age: 30 },
+    { id: 3, name: "Charlie", age: 35 },
+];
+users.forEach(function (user) {
+    console.log("".concat(user.name, " is ").concat(user.age, " years old"));
 });
-// Output: 2, 4, 6, 8, 10
-console.log(result);
