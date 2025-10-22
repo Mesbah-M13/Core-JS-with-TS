@@ -11,8 +11,16 @@ const newArray = array.map((element, index, array) => {
   return transformedValue;
 });
 */
-// Basic Example
-var numbers = [1, 2, 3, 4, 5];
-var doubled = numbers.map(function (num) { return num * 2; });
-console.log(doubled); // [2, 4, 6, 8, 10]
-console.log(numbers); // [1, 2, 3, 4, 5] - original unchanged
+var users = [
+    { id: 1, name: "Alice", age: 25 },
+    { id: 2, name: "Bob", age: 30 },
+    { id: 3, name: "Charlie", age: 35 },
+];
+// Extract just names
+var names = users.map(function (user) { return user.name; });
+console.log(names); // ['Alice', 'Bob', 'Charlie']
+var userCards = users.map(function (user) { return ({
+    displayName: user.name.toUpperCase(),
+    isAdult: user.age >= 18,
+}); });
+console.log(userCards);
