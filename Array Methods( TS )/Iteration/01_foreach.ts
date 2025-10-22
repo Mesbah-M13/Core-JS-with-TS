@@ -44,6 +44,7 @@ console.log(newRes);
 
 // With Type Definitions
 
+/*
 interface User {
   id: number;
   name: string;
@@ -59,3 +60,15 @@ const users: User[] = [
 users.forEach((user: User) => {
   console.log(`${user.name} is ${user.age} years old`);
 });
+*/
+
+// Modifying External Variables
+
+const prices: number[] = [10, 20, 30, 40];
+let total: number = 0;
+
+prices.forEach((price) => {
+  total += price;
+});
+
+console.log(`Total: $${total}`); // Total: $100
