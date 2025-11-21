@@ -1,5 +1,6 @@
 'use client'
 
+import { LiaToggleOffSolid, LiaToggleOnSolid } from "react-icons/lia";
 import useThemeStore from "./store/theme.store";
 
 export default function Home() {
@@ -15,7 +16,10 @@ export default function Home() {
         </h1>
 
       </div>
-      <button className="mt-10 text-center px-4 py-4 rounded-2xl block bg-zinc-600" onClick={toggelTheme}> toogle theme:{theme} </button>
+      <button className="mt-10 text-center px-4 py-4 rounded-2xl block bg-zinc-600" onClick={toggelTheme}>
+        {theme === 'light' ? <LiaToggleOffSolid />
+          : <LiaToggleOnSolid />
+        } </button>
     </div>
   );
 }
