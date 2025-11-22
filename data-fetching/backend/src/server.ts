@@ -1,6 +1,7 @@
 import express from "express";
 import chalk from "chalk";
 import cors from "cors"; // ⬅ important
+import { config } from "../config/config.js";
 
 const app = express();
 
@@ -11,7 +12,8 @@ app.get("/api/message", (req, res) => {
   res.json({ message: "Hello from backend API...!" });
 });
 
-const PORT = 4600;
-app.listen(PORT, () => {
-  console.log(chalk.greenBright(`Server running at http://localhost:${PORT}`));
+app.listen(config.port, () => {
+  console.log(
+    chalk.greenBright(`Server running at http://localhost:${config.port}`)
+  );
 });
