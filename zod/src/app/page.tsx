@@ -1,9 +1,10 @@
-import Image from "next/image";
+import UserFormData from "@/UserFormData";
 
 export default function Home() {
   return (
     <>
       <h1>Hello.....</h1>
+      <UserFormData />
     </>
   );
 }
