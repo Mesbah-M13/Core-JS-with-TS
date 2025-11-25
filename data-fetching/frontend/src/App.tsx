@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [message, setMessage] = useState("");
-
+  const backendURL = import.meta.env.VITE_BACKEND_URL;
+  console.log(backendURL);
   useEffect(() => {
     fetch("http://localhost:5000/api/message")
       .then(res => res.json())
