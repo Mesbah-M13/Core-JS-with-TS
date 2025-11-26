@@ -10,4 +10,6 @@ const laptop: Laptop = {
   launchDate: 2024,
 };
 
-console.log(laptop);
+// console.log(laptop);
+
+console.log(laptop.model);
