@@ -6,11 +6,17 @@ const fs = require("fs");
 //     console.log("Something went wrong : ", err);
 //   } else console.log("Successfull");
 // });
-fs.readFile("example.txt", "utf-8", (err, data) => {
+// fs.readFile("example.txt", "utf-8", (err: Error, data: string) => {
+//   if (err) {
+//     console.log(err);
+//     return;
+//   }
+//   console.log("File data :\n" + data);
+// });
+fs.unlink("example.txt", (err) => {
     if (err) {
         console.log(err);
-        return;
     }
-    console.log("File data :\n" + data);
+    console.log("Delete successfully");
 });
 //# sourceMappingURL=app.js.map

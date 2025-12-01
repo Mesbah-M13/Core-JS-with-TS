@@ -6,10 +6,17 @@ const fs = require("fs");
 //   } else console.log("Successfull");
 // });
 
-fs.readFile("example.txt", "utf-8", (err: Error, data: string) => {
+// fs.readFile("example.txt", "utf-8", (err: Error, data: string) => {
+//   if (err) {
+//     console.log(err);
+//     return;
+//   }
+//   console.log("File data :\n" + data);
+// });
+
+fs.unlink("example.txt", (err: Error) => {
   if (err) {
     console.log(err);
-    return;
   }
-  console.log("File data :\n" + data);
+  console.log("Delete successfully");
 });
