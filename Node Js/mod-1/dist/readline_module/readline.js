@@ -4,6 +4,7 @@ const readline = require("readline");
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
+    prompt: ">",
 });
 rl.question("What's your name?", (answer) => {
     console.log(answer);
@@ -12,4 +13,6 @@ rl.question("What's your name?", (answer) => {
         process.exit();
     });
 });
+// *** Creating a Readline Interface
+// The createInterface method is the main way to create a readline interface. It takes an options object with several configuration properties:
 //# sourceMappingURL=readline.js.map
