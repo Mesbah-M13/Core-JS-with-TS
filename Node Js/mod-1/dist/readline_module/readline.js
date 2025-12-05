@@ -7,6 +7,9 @@ const rl = readline.createInterface({
 });
 rl.question("What's your name?", (answer) => {
     console.log(answer);
-    process.exit();
+    rl.question("How old are you?", (age) => {
+        console.log(`I am ${age} years old`);
+        process.exit();
+    });
 });
 //# sourceMappingURL=readline.js.map

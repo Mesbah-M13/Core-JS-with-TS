@@ -7,5 +7,9 @@ const rl = readline.createInterface({
 
 rl.question("What's your name?", (answer: any) => {
   console.log(answer);
-  process.exit();
+
+  rl.question("How old are you?", (age: number) => {
+    console.log(`I am ${age} years old`);
+    process.exit();
+  });
 });
