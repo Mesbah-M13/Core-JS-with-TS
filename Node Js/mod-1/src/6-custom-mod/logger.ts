@@ -11,3 +11,10 @@ const logMessage = (message: string | null) => {
 };
 
 module.exports = logMessage;
+
+// add new property to the default exports using .config
+
+module.exports.config = {
+  logFileName: "app.log",
+  logDirectory: "./src/6-custom-mod/",
+};
