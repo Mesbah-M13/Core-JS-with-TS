@@ -27,6 +27,7 @@ function main() {
   createOrder();
   chargePayment();
   sendInvoice();
+  console.log("Other requests are processing..."); // it will print 1st as others are showing result from asynchronous call
 }
 
 main();
